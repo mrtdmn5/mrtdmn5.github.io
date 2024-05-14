@@ -55,6 +55,10 @@ smartGlassButton.addEventListener('click', () => {
     const img1Smart = document.getElementsByClassName('image-1-smart');
     const smartGlassButton = document.querySelector('.smartglassbutton');
     const smartGlassesPrice = document.querySelector('.smartGlassesPrice');
+    const explainText1 = document.querySelector('.explain-text-1');
+    const explainText2 = document.querySelector('.explain-text-2');
+    const spanTitleSmart = document.querySelector('.span-title-smart');
+
     if (img0[0].style.display === 'none') {
        
         smartGlassesPrice.textContent = '3300 kr';
@@ -64,6 +68,10 @@ smartGlassButton.addEventListener('click', () => {
         img1Smart[0].style.display = 'none';
         smartGlassButton.style.backgroundColor = '';
         smartGlassButton.style.color = '#000';
+        explainText2.style.display = 'block';
+        explainText1.style.display = 'none';
+        spanTitleSmart.style.display = 'none';
+        
     } else {
         img0[0].style.display = 'none';
         img1[0].style.display = 'none';
@@ -72,6 +80,9 @@ smartGlassButton.addEventListener('click', () => {
         smartGlassButton.style.backgroundColor = '#000';
         smartGlassButton.style.color = '#fff';
         smartGlassesPrice.textContent = '4299 kr';
+        explainText2.style.display = 'none';
+        explainText1.style.display = 'block';
+        spanTitleSmart.style.display = 'inline-block';
 
     }
 });
