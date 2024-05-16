@@ -1,4 +1,4 @@
-const button = document.querySelector('.IconButton_icon-button___iBUv.IconButton_is-lg__Y55oL.ProductGallery_product-gallery-next__Ytwck');
+const button = document.querySelector('.nextButtonForGlasses');
 
 button.addEventListener('click', () => {
 
@@ -23,7 +23,7 @@ const slideLineColor3 = document.getElementsByClassName('slideLineColor3');
     slideLineColor3[0].style.display = 'block';
 });
 
-const prevButton = document.querySelector('.IconButton_icon-button___iBUv.IconButton_is-lg__Y55oL.IconButton_is-disabled__T0_3R.ProductGallery_product-gallery-prev__khfBU');
+const prevButton = document.querySelector('.prevButtonForGlasses');
 
 prevButton.addEventListener('click', () => {
     const img1 = document.getElementsByClassName('my-image1');
