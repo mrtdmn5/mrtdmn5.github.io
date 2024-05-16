@@ -28,6 +28,7 @@ const prevButton = document.querySelector('.IconButton_icon-button___iBUv.IconBu
 prevButton.addEventListener('click', () => {
     const img1 = document.getElementsByClassName('my-image1');
     const img2 = document.getElementsByClassName('my-image2');
+
     const slideText1 = document.getElementsByClassName('slide-text1');
     const slideText2 = document.getElementsByClassName('slide-text2');
     const slideLineColor1 = document.getElementsByClassName('slideLineColor1');
@@ -51,8 +52,12 @@ const smartGlassButton = document.querySelector('.smartglassbutton');
 smartGlassButton.addEventListener('click', () => {
     const img0 = document.getElementsByClassName('image-0');
     const img1 = document.getElementsByClassName('image-1');
+    const img1Mobile = document.getElementsByClassName('image-1-mobile');
+
     const img0Smart = document.getElementsByClassName('image-0-smart');
     const img1Smart = document.getElementsByClassName('image-1-smart');
+    const img1MobileSmart = document.getElementsByClassName('image-1-mobile-smart');
+
     const smartGlassButton = document.querySelector('.smartglassbutton');
     const smartGlassesPrice = document.querySelector('.smartGlassesPrice');
     const explainText1 = document.querySelector('.explain-text-1');
@@ -66,8 +71,10 @@ smartGlassButton.addEventListener('click', () => {
         smartGlassesPrice.textContent = '1000 kr';
         img0[0].style.display = 'block';
         img1[0].style.display = 'block';
+        img1Mobile[0].style.display = 'block';
         img0Smart[0].style.display = 'none';
         img1Smart[0].style.display = 'none';
+        img1MobileSmart[0].style.display = 'none';
         smartGlassButton.style.backgroundColor = '';
         smartGlassButton.style.color = '#000';
         explainText2.style.display = 'block';
@@ -76,8 +83,10 @@ smartGlassButton.addEventListener('click', () => {
     } else {
         img0[0].style.display = 'none';
         img1[0].style.display = 'none';
+        img1Mobile[0].style.display = 'none';
         img0Smart[0].style.display = 'block';
         img1Smart[0].style.display = 'block';
+        img1MobileSmart[0].style.display = 'block';
         smartGlassButton.style.backgroundColor = '#000';
         smartGlassButton.style.color = '#fff';
         smartGlassesPrice.textContent = '1999 kr';
